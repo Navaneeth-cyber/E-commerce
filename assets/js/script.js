@@ -10,7 +10,7 @@ function displayProducts(products) {
     const productList = document.getElementById('product-list');
     productList.innerHTML = products
         .map(product => `
-            <div class="product p-3">
+            <div class="product p-3 col-md-4">
                 <img src="${product.image}" class="card-img-top" alt="${product.name}">
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">₹${product.price}</p>
