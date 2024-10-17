@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navaneeth's E-Commerce</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center p-3">
         <h1>Welcome to Navaneeth's Store</h1>
-        <input type="text" id="search-bar" placeholder="Search for products...">
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <input type="text" id="search-bar" class="form-control" placeholder="Search for products..." />
+        <button id="dark-mode-toggle" class="btn btn-light mt-2">Toggle Dark Mode</button>
     </header>
 
     <!-- Product Carousel -->
@@ -29,11 +30,11 @@
         </div>
     </div>
 
-    <section id="product-list"></section>
+    <section id="product-list" class="row"></section>
 
-    <div id="chatbot"></div>
+    <div id="chatbot" class="chatbot bg-light p-3 mt-3"></div>
 
-    <button id="pay-button">Pay Now</button>
+    <button id="pay-button" class="btn btn-success">Pay Now</button>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
